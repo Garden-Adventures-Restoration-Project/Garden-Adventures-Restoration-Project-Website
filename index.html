@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandy Lee's Garden Adventures</title>
+    <link rel="stylesheet" href="landingstyle.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+    <section id="content">
+        <img id="welcome" src="assets/logowelcome.png"/>
+        <img id="dandytree" src="assets/dandytree.png"/>
+        <div id="linkflower" class="imgmap">
+            <img src="assets/linkflower1.png" usemap="#flower"/>
+            <map name="flower">
+                <area alt="Media" title="Media" href="/media.html" coords="332,1370,1051,1745" shape="rect">
+                <area alt="Videos" title="Videos" href="/videos.html" coords="1240,1383,2120,1758" shape="rect">
+                <area alt="Our Story" title="Our Story" href="/ourstory.html" coords="595,524,1401,915" shape="rect">
+                <area alt="The Town" title="The Town" href="/thetown.html" coords="1831,735,2662,1097" shape="rect">
+            </map>
+        </div>
+    </section>
+    <script src="imageMapResizer.min.js"></script>
+    <script>
+        ["load", "resize"].forEach(event => {
+            window.addEventListener(event, ()=>{
+                try {
+                    imageMapResize();
+                }catch(err){
+                    alert(err);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
