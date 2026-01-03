@@ -1,12 +1,12 @@
 :root {
     --text: #111;
-    --background: #a53;
-    --content: #fea;
-    --topbar: #f97;
-    --button: #f85;
+    --background: #fa5;
+    --content: #ffdbb5;
+    --topbar: #ffb18e;
+    /*--button: #f85;*/
     --gradientmix: #532;
-    --link: #5af;
-    --hover: #f77;
+    --link: #fe8;
+    --hover: rgb(255, 106, 198);
     --cround: 0.25rem;
 }
 
