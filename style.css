@@ -13,11 +13,20 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    background-color: var(--background);
+}
+
+body {
+    --scrollY: 0px;
+    background: var(--background) url(assets/placeholderback.jpeg);
+    background-repeat: repeat;
+    background-size: 10vh;
+    background-position-x: var(--scrollY);
     color: var(--text);
     font-family: "main", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: calc(1.1vw + 1.1vh);
 }
+
+
 
 a {
     color: var(--link);
@@ -50,6 +59,18 @@ section#content {
     right: 8vw;
     bottom: 0px;
     overflow-y: auto;
+    box-shadow: 0px 0px 5px var(--gradientmix);
+}
+
+img.wrapped-image {
+    width: 30%;
+    height: initial;
+    float: right;
+    margin: 0.25em;
+}
+
+img.wrapped-image.left {
+    float: left;
 }
 
 p>img {
@@ -59,7 +80,10 @@ p>img {
 
 div#info {
     padding: 0.5em;
-    height: 80vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 div#footer {

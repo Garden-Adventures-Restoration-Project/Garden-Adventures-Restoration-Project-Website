@@ -18,11 +18,28 @@
             </div>
         </div>
         <div id="info">
-            <p>Test</p>
+            <p>
+                <img src="assets/placeholderpuppet.jpeg" class="wrapped-image">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt nam, illum, temporibus, ratione optio qui nulla sint at libero laborum modi atque adipisci iure iste unde ipsum incidunt eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem iusto praesentium eos aspernatur quidem delectus, in asperiores, perferendis aliquam, omnis totam cum quaerat modi temporibus quibusdam dolore quam dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta facilis beatae, accusamus vel laudantium natus modi nostrum culpa quis inventore aliquid error obcaecati molestias aspernatur vero. Commodi, accusamus impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique? Ab commodi quo ex ea sit iure mollitia cumque temporibus consectetur necessitatibus eius illum, earum recusandae, sed repudiandae officiis deserunt.
+            </p>
+            <p>
+                <img src="assets/placeholderpuppet.jpeg" class="wrapped-image left">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sunt qui corrupti dolor culpa, sequi adipisci. Veniam sequi enim culpa quam natus? Voluptas et repellendus corporis eveniet sapiente. Repellendus, vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cumque hic assumenda non dolorem iusto. Vel et labore officia optio voluptas ipsum dolore hic, sapiente, fuga quaerat dolor perferendis in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque similique odit reprehenderit ut dolore consectetur eius itaque, error deserunt eveniet debitis libero doloremque laudantium odio ea possimus impedit at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum magni possimus, reiciendis ab quidem quae architecto, obcaecati quia beatae doloribus dolorum tempore corrupti porro necessitatibus ipsum fugiat vero rem!
+            </p>
         </div>
         <div id="footer">
-            <p class="sub">GardenAdventures @2016</p>
+            <p class="sub">GardenAdventures @2024</p>
         </div>
     </section>
+    <script>
+        var contentDom = document.getElementById("content");
+        contentDom.addEventListener("scroll",()=>{
+            try {
+                document.body.style.setProperty("--scrollY",`${contentDom.scrollTop}px`);
+            }catch(err){
+                alert(err);
+            }
+        },0);
+    </script>
 </body>
 </html>
