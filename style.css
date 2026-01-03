@@ -26,7 +26,10 @@ body {
     font-size: calc(1.1vw + 1.1vh);
 }
 
-
+@font-face {
+    font-family: "main";
+    src: url(assets/Poppins-Medium.ttf);
+}
 
 a {
     color: var(--link);
@@ -36,11 +39,6 @@ a {
 a:hover {
     color: var(--hover);
     text-decoration: underline;
-}
-
-@font-face {
-    font-family: "main";
-    src: url(assets/Poppins-Medium.ttf);
 }
 
 p.sub {
@@ -55,8 +53,8 @@ section#content {
     background-color: var(--content);
     position: absolute;
     top: 0;
-    left: 8vw;
-    right: 8vw;
+    left: 11vw;
+    right: 11vw;
     bottom: 0px;
     overflow-y: auto;
     box-shadow: 0px 0px 5px var(--gradientmix);
