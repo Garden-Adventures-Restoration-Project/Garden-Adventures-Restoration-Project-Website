@@ -5,7 +5,7 @@ html, body {
 
 body {
     overflow: hidden;
-    background: linear-gradient(0deg, #d29074, #ffe7a9, #d29074);
+    background: radial-gradient(#ffe7a9, #d29074);
     width: 100vw;
     height: 100vh;
     color: #000;
@@ -20,6 +20,20 @@ img#welcome {
     left: 0;
     width: 40vw;
     height: auto;
+    animation-name: sway;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes sway {
+    from {
+        transform: rotate(-2deg);
+    }
+    to {
+        transform: rotate(2deg);
+    }
 }
 
 img#dandytree {
@@ -28,7 +42,20 @@ img#dandytree {
     right: 0;
     width: auto;
     height: 80vh;
-    transform: translateY(-50%);
+    animation-name: treesway;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes treesway {
+    from {
+        transform: translateY(-49%);
+    }
+    to {
+        transform: translateY(-51%);
+    }
 }
 
 div#linkflower {
@@ -36,7 +63,27 @@ div#linkflower {
     position: absolute;
     left: 0;
     bottom: 0;
-    transform: translateY(10%);
+    transition-property: transform;
+    transition-duration: 100ms;
+    animation-name: linksway;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes linksway {
+    from {
+        transform: translateY(10%) rotate(-2deg);
+    }
+    to {
+        transform: translateY(10%) rotate(2deg);
+    }
+}
+
+div#linkflower:has(*>area:hover) {
+    animation: none;
+    transform: scale(105%) translateY(10%);
 }
 
 @font-face {
